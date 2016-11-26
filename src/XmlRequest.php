@@ -50,8 +50,9 @@ class XmlRequest
         $node = $this->domTree->createElement($name, $value);
         $requestNode = $this->domTree->getElementsByTagName('request')->item(0);
 
-        if (!$targetNode) {
+        if (! $targetNode) {
             $requestNode->appendChild($node);
+
             return true;
         }
 

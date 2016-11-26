@@ -8,7 +8,7 @@ use SimpleXMLElement;
 class Response
 {
     /**
-     * Errors
+     * Errors.
      */
     protected static $errors = [
         'NO_DATA' => 'Data error: xml not sent',
@@ -25,7 +25,7 @@ class Response
         'MESSAGE_TOO_LONG' => 'Too long message (201 cyr, 459 lat)',
         'NO_MESSAGE' => 'No message provided',
         'MAX_MESSAGES_COUNT' => 'Too many messages in one request',
-        'NOT_ENOUGH_MONEY' => 'Not enough money'
+        'NOT_ENOUGH_MONEY' => 'Not enough money',
     ];
 
     /**
@@ -68,6 +68,7 @@ class Response
                 $error = $value;
             }
         }
+
         return $error;
     }
 }
